@@ -3,11 +3,11 @@ import sys, random
 assert sys.version_info >= (3,7), "This script requires at least Python 3.7"
 
 quit = False
-range = 10
+range = 100
 
 while not quit:
     random_number = random.randint(1,range)
-    number = input("Please guess a number between 1 and{}: ".format(range)
+    number = input("Please guess a number between 1 and {} : ".format(range))
     count = 1
     number = -1
     while int(number) != random_number:
@@ -17,7 +17,7 @@ while not quit:
             if number < random_number:
                 print("You guessed too low")
  
-            number = input("Please guess a number between 1 and{}: ".format(range)
+            number = input("Please guess a number between 1 and{}: ".format(range))
             number = int(number)
             count = count + 1
             print("Good Job")
